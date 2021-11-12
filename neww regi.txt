@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="regi.css"/>
+  </head>
+  <body>
+    <form id="register" action="register">
+      <div class="container">
+        <h1>Register Here</h1>
+       
+
+        <label for="name"><b>Name</b></label>
+        <input
+          type="text"
+          placeholder="Enter name"
+          name="name"
+          id="name"
+          onblur="validate1()"
+        /><br><br>
+        <label for="password"><b>Password</b></label>
+        <input
+          type="text"
+          placeholder="Enter password"
+          name="password"
+          id="password"
+          onblur="validate2()"
+        /><br><br>
+        <label for="confirm_password"><b>Confirm_password</b></label>
+        <input
+          type="text"
+          placeholder="Retype password"
+          name="confirm_password"
+          id="confirm_password"
+          onblur="validate3()"
+        /><br><br>
+        <label for="email_id"><b>Email_id</b></label>
+        <input
+          type="text"
+          placeholder="Enter email_id"
+          name="email_id"
+          id="email_id"
+          onblur="validate4()"
+        /><br><br>
+        <label for="mobile_no"><b>Mobile_no</b></label>
+        <input
+          type="text"
+          placeholder="Enter mobile_no"
+          name="mobile_no"
+          id="mobile_no"
+          onblur="validate5()"
+        />  <br><br>
+        
+       <input href="Login.jsp" class='registerbtn' type="submit" value="Register">
+     <!--<a href ="success.jsp"><input type="submit" value="Register"/></a><br /><br />-->
+     <!--<button onclick="Login.jsp">Register</button>-->
+      </form>
+       <script src="validateRegiseter.js"></script>
+    </div>
+  </body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------
+body{
+    background-image: url("https://media.istockphoto.com/photos/books-on-display-in-the-corner-of-a-second-hand-bookstore-picture-id1129874863?b=1&k=20&m=1129874863&s=170667a&w=0&h=FTGHLcHTwhBCwYVQ-P4pJgrkIbwK0Kh94aYOUxTBRmg=");
+}
+.container{
+    background-image: url("https://img.freepik.com/free-photo/book-stack-library-room-blurred-bookshelf-background_42691-514.jpg?size=626&ext=jpg");
+    height:750px;
+    width:400px;
+    border-radius:10px;
+
+    top:80px;
+    left:300%;
+}
+div.container{
+    margin: 250px;
+
+
+}
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
