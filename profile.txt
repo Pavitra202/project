@@ -1,0 +1,287 @@
+profile.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css"/>
+    <link rel="stylesheet" href="K:\fontawesome\fontawesome-free-5.13.0-web\fontawesome-free-5.13.0-web\css\all.min.css">
+   <script>
+       function stickyMenu(){
+           var sticky=document.getElementById('sticky');
+           if(window.pageYOffset>220){
+               sticky.classList.add('sticky');
+        }
+        else{
+            sticky.classList.remove('sticky');
+        }
+       }
+       window.onscroll=function(){
+           stickyMenu();
+
+       }
+   </script>
+</head>
+<body>
+    <div class="parallax">
+        <div class="page-title">Welcome User</div>
+    </div>
+    <div class="menu" id="sticky">
+    
+    </div>
+    <div class="deals-container" id="books">
+        <div class="parallax">
+            <div class="title">BOOKS</div>
+            
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573742414l/52762903.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>The Book Of Lost Names</b><br/>
+                    <div class="item-select">
+                        Price:260Rs
+                    </div>
+                    <button class="buynow-btn">Add to Cart</button>
+                </div>
+          </div>
+        
+        <div class="items">
+            <div class="images">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71MT+iXWq+L.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>My Name Is Memory</b><br/>
+                    <div class="item-select">
+                        Price:400Rs
+                    </div>
+                    <button class="buynow-btn">Add to Cart</button>
+                </div>
+          </div>
+          <div class="items">
+            <div class="images">
+                <img src="https://cdn.lifehack.org/wp-content/uploads/2015/05/31055903/1-The-Kite-Runner-Riverhead-Edition.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Kite Runner</b><br/>
+                    <div class="item-select">
+                        Price:600Rs
+                    </div>
+                    <button class="buynow-btn">Add to Cart</button>
+                </div>
+          </div>
+          <div class="items">
+            <div class="images">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51cNtOEJpsL._SX305_BO1,204,203,200_.jpg" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>The Famous Five</b><br/>
+                    <div class="item-select">
+                        Price:400Rs
+                    </div>
+                    <button class="buynow-btn">Add to Cart</button>
+                </div>
+          </div>
+          <div class="items">
+            <div class="images">
+                <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1603981638-9780525521143.jpg?crop=1xw:1xh;center,top&resize=480:*" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>The Glass Hotel</b><br/>
+                    <div class="item-select">
+                        Price:570Rs
+                    </div>
+                    <button class="buynow-btn">Add to Cart</button>
+                </div>
+          </div>
+          <div class="items">
+            <div class="images">
+                <img src="https://www.oberlo.com/media/1603897577-image22-1.jpg?w=1824&fit=max" class="item-image-size"/>
+                </div>
+                <div class="description">
+                    <b>Harry Potter</b><br/>
+                    <div class="item-select">
+                        Price:450Rs
+                    </div>
+                    <button class="buynow-btn">Add to Cart</button>
+                </div>
+          </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+profile.css
+
+
+body{
+    margin:0;
+    font-family:system-ui;
+}
+.parallax{
+    background-image: url('https://thumbs.dreamstime.com/b/seamless-school-pattern-watercolor-books-textbooks-colored-pencils-white-background-design-textiles-paper-wallpaper-156622831.jpg');
+    height: max-content;
+    background-attachment: fixed;
+    background-repeat: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.page-title{
+    background: rgba(0,0,0,0.5);
+    text-align:center;
+    color:white;
+    padding:50px;
+    font-variant: small-caps;
+    font-size:100px;
+    font-family: fantasy;
+    letter-spacing: 20px;
+
+}
+.sticky{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.menu{
+    background: #184d47;
+    text-align: center;
+
+}
+.menu-ul{
+    margin:0;
+    padding:0;
+    display:inline;
+
+}
+.menu-ul li{
+    font-size: 17px;
+    list-style: none;
+    display: inline-block;
+    padding: 25px 25px 26px 25px;
+}
+
+.a-menu{
+    text-decoration: none;
+    color: white;
+
+}
+.menu-ul li:hover{
+    background: #5b8c5a;
+    transform: scale(1.1);
+
+}
+.search-box{
+    border:1px solid white;
+    border-radius: 50px;
+    background: white;
+    width:max-content;
+    display:inline-block;
+    margin:8px;
+}
+.search-box:hover{
+    box-shadow: 0 0 10px 2px #5b8c5a;
+    border: 1px solid #5b8c5a;
+
+}
+.search-input{
+    width:250px;
+    border:none;
+    font-size:16px;
+outline: none;
+background: transparent;
+margin:15px 0 0 10px;
+}
+i{
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+button{
+    background: transparent;
+    border:none;
+    outline:none;
+}
+.container{
+    margin: 50px 50px 50px 5%;
+    width:90%;
+    text-align: center;
+}
+.categories,.items{
+    width:max-content;
+    margin:25px;
+    border:1px solid #184d47;
+    border-radius:0 0 50px 50px;
+    display:inline-block;
+}
+.categories:hover,.items:hover{
+    box-shadow: 0 0 10px 3px #184d47;
+}
+.item-image{
+    height:200px;
+    width:200px;
+    border-radius:0 0 50px 50px;
+    padding:10px;
+}
+.image-title{
+    text-align:center;
+    padding:10px;
+    font-weight:bold;
+
+}
+a{
+    text-decoration: none;
+
+}
+.title{
+    padding: 50px;
+    font-size:50px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    color:white;
+    background: rgba(0,0,0,0.5);
+}
+.deal{
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    display: inline-block;
+    margin: 20px;
+    max-width: 20%;
+    background: linear-gradient(120deg,#16817a 20%,#cee397 50%,#16817a 80%);
+    
+}
+.images{
+    display: inline-block;
+}
+.item-image-size{
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+}
+.description{
+    margin:20px;
+    min-height: 100px;
+}
+.item-select{
+    margin: 10px 0 0 0;
+}
+.buynow-btn{
+    border:1px solid #184d47;
+    background: #184d47;
+    padding:5px 15px;
+    border-radius:20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color:white;
+}
+.buynow-btn:hover{
+    border:1px solid #5b8c5a;
+    box-shadow: 0 0 10px 5px #5b8c5a inset;
+}
